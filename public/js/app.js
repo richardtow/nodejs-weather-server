@@ -49,8 +49,8 @@ weatherForm.addEventListener('submit', (e) => {
                             //console.log('Here comes the forecast...')
                             //console.log(forcastData)
                             //console.log(mapData.features[0].place_name + " is currently " + forcastData.currently.summary + "   " + forcastData.daily.summary)
-                            messageOne.innerHTML = 'Here comes the forecast'
-                            messageTwo.innerHTML = mapData.features[0].place_name + " is currently " + forcastData.daily.summary
+                            messageOne.innerHTML = 'Here comes the forecast...'
+                            messageTwo.innerHTML = mapData.features[0].place_name + " " + forcastData.currently.summary + " " + forcastData.hourly.summary + " " + forcastData.daily.summary
                         }
                     })
                 })
